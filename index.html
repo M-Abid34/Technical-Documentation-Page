@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation</title>
+</head>
+<body>
+    <nav id="nav-bar">
+        <ul>
+            <li><a href="#overview" class="">Overview</a></li>
+            <li><a href="#installation" class="">Installation</a></li>
+            <li><a href="#basic_syntax_and_data_types" class="">Basic Syntax and Data Types</a></li>
+            <li><a href="#control_structures_and_functions" class="">Control Structures and Functions</a></li>
+            <li><a href="#modules_and_exception_handling" class="">Modules and Exception Handling</a></li>
+        </ul>
+    </nav>
+    <main id="maind-doc">
+        <section class="main-section" id="overview">
+            <header>Overview</header>
+            <p>Python is a high-level, interpreted programming language known for its readability and versatility. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.</p>
+        </section>
+        <section class="main-section" id="installation">
+            <header>Installation</header>
+            <ol>
+                <li><b>Download:</b> Get the installer from the <a href="https://www.python.org/downloads/" target="_blank">Python website</a>.</li>
+                <li><b>Run the Installer:</b> Follow the prompts and ensure to check "Add Python to PATH."</li>
+                <li><b>Verify Installation:</b> In a terminal, run:<br>
+                <code>
+                    python --version
+                </code>
+                </li>
+            </ol>
+        </section>
+        <section class="main-section" id="basic_syntax_and_data_types">
+            <header>Basic Syntax and Data Types</header>
+            <h3>Syntax</h3>
+            <ul>
+                <li><b>Comments:</b> Use # for single-line and triple quotes for multi-line.</li>
+                <li><b>Indentation:</b> Indentation defines code blocks.<br>
+                <code>
+                    if True:<br>
+                    print("Indented")
+                </code>
+                </li>
+            </ul>
+            <h3>Data Types</h3>
+            <ul>
+                <li><b>Numeric:</b> int, float</li>
+                <li><b>String:</b> str</li>
+                <li><b>Sequence:</b> list,tuple</li>
+                <li><b>Mapping:</b> dict</li>
+                <li><b>Boolean:</b> true,false</li>
+            </ul>
+            <h3>Example</h3>
+            <code>
+                num = 10              # Integer<br>
+                name = "Python"       # String<br>
+                items = [1, 2, 3]    # List
+            </code>
+        </section>
+        <section class="main-section" id="control_structures_and_functions">
+            <header>Control Structures and Functions</header>
+            <h3>Control Structures</h3>
+            <ul>
+                <li>Conditional Statements<br>
+                    <code>
+                        if condition: <br>
+                            # code  <br>
+                        elif another_condition:<br>
+                            # code<br>
+                        else:<br>
+                            # code
+
+                    </code><br>
+                </li>
+                <li>Loops <br>
+                    <code>
+                    for i in range(5):<br>
+                        print(i)<br>
+
+                    while condition:<br>
+                        # code
+                    </code><br>
+                </li>
+            </ul>
+            <h3>Functions</h3>
+            <p>Define functions using def:</p>
+            <code>
+                def add(a, b):<br>
+                    return a + b<br>
+                result = add(2, 3)  # Outputs: 5<br>
+            </code>
+        </section>
+        <section class="main-section" id="modules_and_exception_handling">
+            <header>Modules and Exception Handling</header>
+            <h3>Modules</h3>
+            <ul>
+                <li><b>Importing Modules</b>
+                <code>
+                    import module_name<br>
+                    from module_name import function_name<br>
+                </code>
+                </li>
+            </ul>
+            <h3>Exception Handling</h3>
+            <p>Use try and except blocks to handle exceptions:</p>
+            <code>
+                try:<br>
+                    result = 10 / 0<br>
+                except ZeroDivisionError:<br>
+                    print("Cannot divide by zero")<br>
+            </code>
+        </section>
+    </main>
+    <footer>
+        <h2>Reference</h2>
+        <p>
+            All the information is being generated using AI(ChatGpt 4o mini)
+        </p>
+    </footer>
+</body>
+</html>
